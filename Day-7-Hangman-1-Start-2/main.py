@@ -1,4 +1,3 @@
-#Step 1 
 import random
 
 stages = ['''
@@ -68,6 +67,7 @@ lives = 6
 
 display = ["_" for _ in chosen_word]
 
+
 while lives > 0 and "_" in display:
     user_guess = input("Guess the word: ").lower()
     found = False
@@ -77,9 +77,6 @@ while lives > 0 and "_" in display:
             display[i] = user_guess
             found = True
 
-    if found:
-        print("You won!")
-
     if not found:
         lives -= 1
 
@@ -87,7 +84,8 @@ while lives > 0 and "_" in display:
     print(" ".join(display))
 
 if "_" not in display:
-    print("You won!")
+    print("Congratulations! You won!")
 else:
-    print('You lost!')
+    print('You lose!')
+
 
