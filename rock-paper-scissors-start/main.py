@@ -37,10 +37,10 @@ scissors = '''
 import random
 
 
-user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 3 for Scissors. \n"))
+user_choice = int(input("What do you choose? Type 1 for Rock, 2 for Paper or 3 for Scissors. \n"))
 
 computer_choice = random.randint(1,3)
-3
+
 if user_choice == computer_choice and computer_choice == user_choice:
     if user_choice == 1 and computer_choice == 1:
         print(rock)
