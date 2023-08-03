@@ -57,7 +57,7 @@ stages = ['''
 =========
 ''']
 
-word_list = ["ardvark", "baboon", "camel"]
+word_list = ["ardvark", "baboon", "camel"]  
 
 chosen_word = random.choice(word_list)
 # print(chosen_word)
@@ -83,6 +83,7 @@ while lives > 0 and "_" in display:
     print(stages[lives])
     print(" ".join(display))
 
+# check if it has empty spaces
 if "_" not in display:
     print("Congratulations! You won!")
 else:
