@@ -3,7 +3,7 @@ import random
 stages = ['''
   +---+
   |   |
-  O   |
+  O   | 
  /|\  |
  / \  |
       |
