@@ -81,6 +81,4 @@ while True:
         if check_resources(drink['ingredients']):
             payment = process_coins()
             if transaction_successful(payment, choice):
-                make_coffee(choice, drink['ingredients'])
-
-     
+                make_coffee(choice, drink['ingredients'])   
